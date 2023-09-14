@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home Page</title>
+    <link rel="stylesheet" href="./css/HOMEPAGE.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul class="menu-horizontal">
+          <li><a href="../Home page/HOME PAGE.html">Inicio</a></li>
+          <li>
+            <a href="#">Paginas</a>
+            <ul class="menu-vertical">
+              <li><a href="../Laboratorio 1/pag1/p1.html">Laboratorio 1 Pagina 1</a></li>
+              <li><a href="../Laboratorio 1/pag2/proyecto2.html">Laboratorio 1 Pagina 2</a></li>
+              <li><a href="../Laboratorio 2/pag1/proyecto3.html">Laboratorio 2 Pagina 1</a></li>
+              <li><a href="../Laboratorio 2/pag2/proyecto4.html">Laboratorio 2 Pagina 2</a></li>
+              <li><a href="../Laboratorio 3/index/laboratorio 3.html">Laboratorio 3</a></li>
+              <li><a href="../Laboratorio 4/index/lab4.html">Laboratorio 4</a></li>
+            </ul>
+          </li>
+          <li><a href="../Contacto/index.html">Contacto</a></li>
+    
+        </ul>
+      </nav>
+    </header>
+    <h1>
+      <center>HOME PAGE</center>
+      <center><img src="./imgs/descarga.png"</center>
+  </h1>
+
+    <h2>
+      <button id="boton">SOBRE LA PAGINA WEB</button>
+          <p id="texto">Hola, mi nombre es Patricio Pablo Navarro, estudiante de la escuela tecnica numero 35, del curso 3°9°.
+            Este es un conjunto sade paginas distribuidas en laboratorios creada por mi, cada una entrelazada por el NavBar, o mejor conocido como barra de navegacion que contiene cada pagina.
+            Actualmente yo y mis compañeros desarrollamos esta pagina web, cada uno con sus diferentes estilos en el taller de computacion "Desarrolo Web" con el profesor "Herms".
+            Para hacer esta pagina llamada "Home page" que seria la pagina principal entre todos los laboratorios, use en su mayoria CSS y HTML, y para hacer el boton con el que estas viendo este texto, use un poco de Java Script.
+          </p>
+    </h2>
+  <h3>
+    <p>
+      Paginas destacadas
+    </p>
+    <div class="swiper swiper-hero">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <a href="../Laboratorio 1/pag1/p1.html">
+            <img
+              src="./imgs/disposicion-red.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="../Laboratorio 1/pag2/proyecto2.html">
+            <img
+              src="./imgs/maxresdefault.jpg"
+              alt=""
+            />  
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="../Laboratorio 2/pag1/proyecto3.html">
+            <img
+              src="./imgs/esquemas-de-redes-lan-man-wan.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="../Laboratorio 3/index/laboratorio 3.html">
+            <img
+              src="./imgs/control-4153903_1280.png"
+              alt=""
+            />
+          </a>
+        </div>
+        <div class="swiper-slide">
+          <a href="../Laboratorio 4/index/lab4.html">
+            <img
+              src="./imgs/descarga.jpg"
+              alt=""
+            />
+          </a>
+        </div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+    </div>
+  </h3>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+        <footer>
+          <div class="container__footer">
+              <div class="box__footer">
+                  <div class="logo">
+                      <img src="./imgs/IMG_20230901_114404_797.jpg" alt="">
+                  </div>
+                  <div class="terms">
+                      <p>Mi nombre es Patricio Navarro y entre mis compañeros que aparecen en la foto de arriba, Felipe Romano Joaquin Rodrigues y Tobias Miranda, me ayudaron con el desarrollo de los diversos laboratorios echos.</p>
+                  </div>
+              </div>
+              <div class="box__footer">
+                  <h2>Legal</h2>
+                  <a href="#">Aviso Legal</a>
+                  <a href="#">Politicas y Privacidad</a>
+              </div>
+  
+              <div class="box__footer">
+                  <h2>Compañia</h2>
+                  <a href="#">Acerca de</a>
+                  <a href="#">Trabajos</a>
+                  <a href="#">Procesos</a>
+                  <a href="#">Servicios</a>              
+              </div>
+  
+              <div class="box__footer">
+                  <h2>Redes Sociales</h2>
+                  <a href="#"> <i class="fab fa-facebook-square"></i> Facebook</a>
+                  <a href="#"><i class="fab fa-twitter-square"></i> Twitter</a>
+                  <a href="#"><i class="fab fa-linkedin"></i> Linkedin</a>
+                  <a href="#"><i class="fab fa-instagram-square"></i> Instagram</a>
+              </div>
+  
+          </div>
+  
+          <div class="box__copyright">
+              <hr>
+              <p>Patricio Navarro 3°9°<b>Taller Redes</b></p>
+          </div>
+      </footer>
+  </body>
+  <script>
+      const boton = document.getElementById('boton');
+  const texto = document.getElementById('texto');
+
+  boton.addEventListener('click', () => {
+    boton.classList.toggle('clicked');
+    if (boton.classList.contains('clicked')) {
+      texto.textContent = "Hola, mi nombre es Patricio Pablo Navarro, estudiante de la escuela tecnica numero 35, del curso 3°9°. Este es un conjunto de paginas distribuidas en laboratorios creada por mi, cada una entrelazada por el NavBar, o mejor conocido como barra de navegacion que contiene cada pagina. Actualmente yo y mis compañeros desarrollamos esta pagina web, cada uno con sus diferentes estilos en el taller de computacion Desarrolo Web con el profesor Herms. Para hacer esta pagina llamada Home page que seria la pagina principal entre todos los laboratorios, use en su mayoria CSS y HTML, y para hacer el boton con el que estas viendo este texto, use un poco de Java Script.";
+    } else {
+      texto.textContent = "Hola, mi nombre es Patricio Pablo Navarro, estudiante de la escuela tecnica numero 35, del curso 3°9°. Este es un conjunto de paginas distribuidas en laboratorios creada por mi, cada una entrelazada por el NavBar, o mejor conocido como barra de navegacion que contiene cada pagina. Actualmente yo y mis compañeros desarrollamos esta pagina web, cada uno con sus diferentes estilos en el taller de computacion Desarrolo Web con el profesor Herms. Para hacer esta pagina llamada Home page que seria la pagina principal entre todos los laboratorios, use en su mayoria CSS y HTML, y para hacer el boton con el que estas viendo este texto, use un poco de Java Script.";
+    }
+  });
+
+  const swiper = new Swiper(".swiper-hero", {
+
+
+        direction: "horizontal",
+        loop: true,
+
+        autoplay: {
+          delay: 10000,
+          pauseOnMouseEnter: true,
+          disableOnInteraction: false,
+        },
+
+
+        pagination: {
+          el: ".swiper-pagination",
+
+          clickable: true,
+
+        },
+
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+
+
+      });
+        </script>
+</html>
